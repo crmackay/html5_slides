@@ -27,6 +27,7 @@ var SLIDE_CONFIG = {
     gplus: 'http://plus.google.com/1234567890',
     twitter: '@yourhandle',
     www: 'http://www.you.com',
+    email: 'email@umassmed.edu',
     github: 'http://github.com/you'
   }/*, {
     name: 'Second Name',

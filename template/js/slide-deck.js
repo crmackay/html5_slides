@@ -350,13 +350,16 @@ SlideDeck.prototype.loadConfig_ = function(config) {
           '<a href="http://twitter.com/' + p.twitter + '">' +
           p.twitter + '</a>' : '';
 
-      var www = p.www ? '<span>www</span><a href="' + p.www +
+      var www = p.www ? '<span>email:</span><a href="' + p.www +
                         '">' + p.www.replace(/https?:\/\//, '') + '</a>' : '';
+                        
+    var email = p.email ? '<span>email:</span><a href="' + p.www +
+                        '">' + p.email.replace(/https?:\/\//, '') + '</a>' : '';
 
       var github = p.github ? '<span>github</span><a href="' + p.github +
           '">' + p.github.replace(/https?:\/\//, '') + '</a>' : '';
 
-      var html2 = [gplus, twitter, www, github].join('<br>');
+      var html2 = [gplus, twitter, www, email, github].join('<br>');
 
       if (dataConfigContact) {
         dataConfigContact.innerHTML = html2;
@@ -756,7 +759,7 @@ SlideDeck.prototype.loadTheme_ = function(theme) {
 /**
  * @private
  */
-SlideDeck.prototype.loadAnalytics_ = function() {
+/**SlideDeck.prototype.loadAnalytics_ = function() {
   var _gaq = window['_gaq'] || [];
   _gaq.push(['_setAccount', this.config_.settings.analytics]);
   _gaq.push(['_trackPageview']);
@@ -767,7 +770,7 @@ SlideDeck.prototype.loadAnalytics_ = function() {
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 };
-
+*/
 
 // Polyfill missing APIs (if we need to), then create the slide deck.
 // iOS < 5 needs classList, dataset, and window.matchMedia. Modernizr contains
