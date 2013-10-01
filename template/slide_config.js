@@ -1,16 +1,16 @@
 var SLIDE_CONFIG = {
   // Slide settings
   settings: {
-    title: 'Title Goes Here<br>Up To Two Lines',
-    subtitle: 'Subtitle Goes Here',
+    title: 'Proposed Change to the Student Honor Code',
+    subtitle: 'EPC Meeting <br/> October 07, 2013',
     //eventInfo: {
-    //  title: 'Google I/O',
-    //  date: '6/x/2013'
+    //  title: 'EPC Meeting',
+    //  date: '10/07/2013'
     //},
     useBuilds: true, // Default: true. False will turn off slide animation builds.
     usePrettify: true, // Default: true
-    enableSlideAreas: true, // Default: true. False turns off the click areas on either slide of the slides.
-    enableTouch: true, // Default: true. If touch support should enabled. Note: the device must support touch.
+    enableSlideAreas: true, // Default: true. False turns off the click areas on either side of the slides.
+    enableTouch: false, // Default: true. If touch support should enabled. Note: the device must support touch.
     //analytics: 'UA-XXXXXXXX-1', // TODO: Using this breaks GA for some reason (probably requirejs). Update your tracking code in template.html instead.
     favIcon: 'images/google_developers_logo_tiny.png',
     fonts: [
@@ -22,12 +22,13 @@ var SLIDE_CONFIG = {
 
   // Author information
   presenters: [{
-    name: 'Firstname Lastname',
-    company: 'Job Title<br>Google',
-    gplus: 'http://plus.google.com/1234567890',
-    twitter: '@yourhandle',
-    www: 'http://www.you.com',
-    github: 'http://github.com/you'
+    name: 'Chris MacKay',
+    company: 'Student Representative<br>EPC',
+//    gplus: 'http://plus.google.com/1234567890',
+//    twitter: '@yourhandle',
+//    www: 'http://www.you.com',
+//    github: 'http://github.com/you'
+    email: 'christopher.mackay@umassmed.edu',
   }/*, {
     name: 'Second Name',
     company: 'Job Title, Google',
